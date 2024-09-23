@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration page</title>
+<link rel="stylesheet" type="text/css" href="/registration.css">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+
+	<form action="/register" method="post">
+	<div class="container">
+		<h2 style="color: aqua;font-size: 35px;text-align: center;margin-top: 10px;">Registration Form</h2>
+        
+        
+        <i class="fa fa-user"></i>
+        <input type="text" name="username" placeholder="Enter the Username" class="input-field"><br><br>
+        
+        
+        <i class="fa fa-envelope"></i>
+        <input type="email" name="email" placeholder="Enter the Email" class="input-field"><br><br>
+
+       
+        <i class="fa fa-lock"></i>
+        <input type="password" name="password" placeholder="Enter the Password" class="input-field"><br><br>
+
+        Gender: <br>
+        <div class="chechbox">
+            <input type="radio" name="gender" value="Male" >
+            <i class="fa fa-male" aria-hidden="true"></i>
+            <label for="Male">Male</label><br><br>
+
+            <input type="radio" name="gender" value="Female">
+            <i class="fa fa-female" aria-hidden="true"></i>
+            <label for="female">Female</label><br><br>
+
+            <input type="radio" name="gender" value="Other">
+            <i class="fa fa-transgender" aria-hidden="true"></i>
+            <label for="other">Other</label><br><br>
+            
+            Role: <br>
+            <input type="radio" name="role" value="Admin">
+            <label for="Admin">Admin</label><br>
+
+            <input type="radio" name="role" value="Customer">
+            <label for="Customer">Customer</label><br><br>
+            </div>
+        	<Label>Address</Label>
+        	<i class="fa fa-address-card-o" aria-hidden="true"></i><br>
+        	<textarea name="address" placeholder="Type the address Here"></textarea><br><br>
+        	
+        <input type="submit" value="SUBMIT" class="btn-submit">
+</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0; 
+  background: url("/images/view_playlist.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+ background-attachment:fixed; 
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.container-viewplaylist{
+	margin-top:80px;
+	margin-left:575px;
+	width:480px;
+	height:100%;
+	border: 3px solid gray;
+	border-radius:8px;
+	text-align: left;
+	padding-left:20px;
+	backdrop-filter: blur(10px);
+	color: white;
+}

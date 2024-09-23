@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CREATEPLAYLIST PAGE</title>
+<link rel="stylesheet" type="text/css" href="/createplaylist.css">
+</head>
+<body>
+<div class="container-createplaylist">
+    <form action="addplaylist" method="post">
+        <label>PLAYLIST NAME</label>
+        <input type="text" name="name" style="width: 200px; margin-top: 10px;margin-bottom:10px; height: 25px; border-radius: 7px;">
+        <br>
+        <div th:each="song : ${songs}">
+            <input type="checkbox" th:name="'songs'" th:value="${song.id}" style="margin: 10px; padding-left: 7px;">
+            <label th:text="${song.name}"></label>
+        </div>
+        <br>
+        <input type="submit" value="ADD PLAYLIST" class="btn-submit">      
+    </form>
+    </div>
+</body>
+</html>

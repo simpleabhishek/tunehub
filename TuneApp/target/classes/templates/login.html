@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+
+	<div class="container-login">
+	<form action="/validate" method="post">
+	
+		<h2 style="text-align: center; font-size: 35px;font-family: serif">Login </h2><br>
+		
+		<input type="email" name="email" placeholder="Enter the email@gmail.com" class="input-field"> <br> <br>
+
+		
+		<input type="password" name="password" placeholder="Enter the Password" class="input-field"> <br> <br> 
+		
+		<input type="checkbox" id="checkbox1" style="font-family:serif; font-size: 18px">
+		<label for="checkbox1">Remember me </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" style="text-decoration: none;font-size: 18px;color: orange;">Forgot password</a>
+		
+		<br><br>
+		<input type="submit" value="LOGIN" class="btn-submit"><br><br>
+		
+		<label style="margin-left: 20px;" >Don't have an account ?</label>&nbsp<a href="/registration" style="text-decoration: none;font-size: 18px;color: orange;"> Registration</a>
+	</form>
+</div>
+</body>
+</html>
